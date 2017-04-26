@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Table.html</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/lab3-theme.css"/>
+	<script src="js/table.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="center">
+			<h2>
+			     WEB222 - Assignment 3
+			</h2>
+		</div>
+	</header>
+	<nav>
+		<div class="center">
+		<ul>	
+			<li><a href="index.html">Home</a></li>
+			<li><a href="list.html">List</a></li>
+			<li><a href="table.html">Table</a></li>
+			<li><a href="image.html">Image</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="seneca.html">Seneca</a></li>
+			<li><a href="honesty.html">Honesty</a></li>
+		</ul>
+		</div>
+	</nav>
+		
+	<section class="main center">
+	
+	<!-- Start your code here -->
+		<h2>HTML Tables</h2>
+			<div>
+		<h2>Here is the simple HTML table.</h2>
+		<table>
+			<caption>This is the 1st table</caption>
+			<tr>
+				<th>&nbsp;Country&nbsp;</th>
+				<th>&nbsp;Captial&nbsp;</th>
+				<th>&nbsp;GDP($USD Billion)&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Canada</td>
+                <td>Ottawa</td>
+                <td>1550.54</td>
+			</tr>
+			<tr>
+				<td>India</td>
+                <td>New Delhi</td>
+                <td>2095.40</td>
+			</tr>
+			<tr>
+				<td>USA</td>
+                <td>Washington, D.C.</td>
+                <td>18036.65</td>
+			</tr>
+			</table><br/>
+			</div>
+			<div>
+			<h2>Here is the table using thead, tbody and tfoot tags.</h2>
+
+			<table>
+     <thead style="background-color:dodgerblue;">
+          <tr>
+               <th>&nbsp;Player&nbsp;<br/>&nbsp;Name&nbsp;</th>
+               <th>&nbsp;Team&nbsp;<br/>&nbsp;Name&nbsp;</th>
+			   <th>&nbsp;High&nbsp;<br/>&nbsp;Score&nbsp;</th>
+          </tr>
+     </thead>
+     
+     <tbody style="background-color:cornflowerblue;">
+          <tr>
+               <td>Kent Bazemore</td>
+               <td>Atlanta Hawks</td>
+			   <td>10</td>
+			   
+				   
+          </tr>
+          <tr>
+  				<td>Avery Bradley</td>
+			   
+  				<td>Boston Celtics</td>
+			   <td>12</td>
+          </tr>
+     </tbody>
+	 <tfoot style="background-color:dodgerblue;">
+          <tr>
+			   <td>Jimmy Butler</td>               
+  				<td>Chicago Bulls</td>
+				  <td>16</td>
+			  
+          </tr>
+     </tfoot>
+</table>
+	</div>
+	<div>
+			
+	<h2>Here is the Student Information table using DOM object.</h2>
+<table id="MyTable">
+			
+        </table><br/>
+	</div>
+	
+	<!-- End your code here  -->
+	
+	</section>
+	<footer>
+	  <div class="center">
+		  &copy; 2017 Mayankkumar S. Patel (115493165).
+	  </div>
+	</footer>
+</body>
+</html>	  

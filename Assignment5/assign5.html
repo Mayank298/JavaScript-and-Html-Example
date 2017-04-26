@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="css/assign5.css" />
+        <script src="js/assign5.js"></script>
+    </head>
+    <body>
+       <div  class="form">
+               <h2>JoBSearch<small>.com</small></h2>
+               <h4>Create Your Account</h4>
+               <h6>* Required information</h6>
+            <form id="jobsearch" name="jobsearch" method='post' onsubmit='return validationFun(this);' action='https://httpbin.org/post' >
+            <fieldset class="all">      
+               <legend>Basic Information</legend>   
+               <div class="innerclass">       
+               <label >Email<b> *</b></label><input type="email" name="email" size="20" id="emial" class="inputType"  autofocus  required>
+               </div>
+               <div class="innerclass">       
+               <label>Password<b> *</b></label><input type="password" name="password" id="password" class="inputType" onchange="passwordValidation()"  size="20" tabindex="0" required/>
+               <div class="error" id="errfn0">   </div>
+               </div>
+               <div class="innerclass">       
+               <label>Retype Password<b> *</b></label><input type="password" name="repassword" class="inputType" id="repassword" onchange="repasswordValidation()" size="20" tabindex="0" required/>
+               <div class="error" id="errfn1">   </div>
+               </div>
+               <div class="innerclass">       
+               <label>First Name<b> *</b></label><input type="text" name="fname" id="fname" class="inputType" size="20" tabindex="0" onchange="fnamevalidate()"  required/>
+               <div class="error" id="errfn2">   </div>
+               </div>
+               <div class="innerclass">       
+               <label>Last Name<b> *</b></label><input type="text" name="lname" id="lname" class="inputType" size="20" tabindex="0" onchange="lnamevalidate()" required/>
+               <div class="error" id="errfn3">   </div>
+               </div>
+               <div class="innerclass">       
+               <label>Phone Number<b> *</b></label><input type="tel"  title="Number in ###-###-#### Format" name="pnum" id="pnum" placeholder="999-999-9999" pattern="^\d{3}-\d{3}-\d{4}$"  value="" size="20" onchange="phonenumber()" class="inputType" tabindex="0" required/>
+               <div class="error" id="errfn4">   </div>
+               </div>
+               <div class="innerclass">       
+               <label for="add">Address<b> *</b></label><input type="text" name="add" id="add" size="20" class="inputType" tabindex="0" required/>
+               </div>
+               <div class="innerclass">       
+               <label for="city">City<b> *</b></label><input type="text" name="city" id="city" class="inputType" size="20"  tabindex="0" required/>
+               </div> 
+               <div class="innerclass">    
+               <label for="provs">Provinces<b> *</b></label><select class="selectlst" id="provs" name="provs">
+                <optgroup label="Province">
+                <option value="alb">Alberta</option>
+                <option value="brc">British Columbia</option>
+                <option value="mab">Manitoba</option>
+                <option value="newb">New Brunswick</option>
+                <option value="nal">Newfoundland and Labrador</option>
+                <option value="nos">Nova Scotia</option>
+                <option value="on">Ontario</option>
+                <option value="pei">Prince Edward Island</option>
+                <option value="qub">Quebec</option>
+                <option value="stc">Saskatchewan</option>
+                </optgroup>
+                <optgroup label="Territories">
+                <option value="ntt">Northwest Territories</option>
+                <option value="nut">Nunavut</option>
+                <option value="yuk">Yukon</option>
+                </optgroup>
+               </select>
+               </div>
+               <div class="innerclass">       
+               <label for="cntry">Country<b> *</b></label><input type="text" list="country" name="cntry" id="cntry"  class="inputType" size="20"  tabindex="0" required/>
+                <datalist id="country">
+                    <option value="Australia"></option>
+                    <option value="Canada" ></option>
+                    <option value="India" ></option>
+                    <option value="United States" ></option>
+                    <option value="United Kingdom"></option>
+                </datalist>
+               </div>
+                                         
+            </fieldset>
+            <fieldset class="all">      
+               <legend>Education</legend>          
+               <div class="innerclass">       
+               <label for="schl">School<b> *</b></label><input type="text" name="schl" size="20" id="schl"  class="inputType" required/>
+               </div>
+               <div class="innerclass">       
+               <label for="program">Program<b> *</b></label><input type="text" name="program" id="program"  class="inputType" size="20" tabindex="0" required/>
+               </div>
+               <div class="innerclass"> 
+                <label for="selectlstedu">Education Level <b> *</b></label>
+                <select class="selectlstedu" name="selectlstedu" onchange="Myselectvalidation()"  id="selectlstedu" required>
+                <option  value="">- Select -</option>
+                <option  value="Technical Diploma">Technical Diploma</option>
+                <option  value="College Diploma">College Diploma</option>
+                <option  value="Bachelor's Degree">Bachelor's Degree</option>
+                <option  value="Master's Degree">Master's Degree</option>
+                <option  value="Others">Others</option>
+                </select>
+                <div class="error" id="errfn5">   </div>
+               </div>
+               <div class="innerclass">
+               <fieldset class="inn">
+               <legend>Education Status</legend> 
+               <p><label ><input type="radio" name="graduated" id="rbtn1" class="rdb" value="graduated"/> Graduated</label></p>
+               <p><label ><input type="radio" name="graduated" id="rbtn2" class="rdb" value="currentenrl"/> Current Enrolled</label></p>
+               <p><label ><input type="radio" name="graduated" id="ebtn3" class="rdb" value="didngra"/> Did Not Graduate</label></p>
+               </fieldset>
+               </div>
+               <div class="innerclass">       
+               <label for="gdate">Graduation Date <b>    </b></label><input type="text" name="gdate" id="gdate" class="inputType" size="20" tabindex="0" /> 
+               </div>
+            </fieldset>
+            <fieldset class="all">      
+               <legend>Work Experience</legend>          
+               <div class="innerclass">       
+               <label for="emply">Employer: <b>  </b></label><input type="text" name="emply" id="emply" class="inputType" size="20" tabindex="0"/> 
+               </div>
+               <div class="innerclass">       
+               <label for="jtitle">Job Title: <b>  </b></label><input type="text" name="jtitle" id="jtitle" class="inputType" size="20" tabindex="0"  /> 
+               </div>
+               <div class="innerclass">
+               <label for="jobd">Job Duty:<b>  </b></label><textarea id="jobd" name="jobd" cols="21" rows="4" class="inputType"></textarea>
+               </div>
+               <div class="innerclass">       
+               <label for="wyear">Worked Year: <b>  </b></label><input type="number" name="wyear" id="wyear" size="20" class="inputType" tabindex="0" /> 
+               </div>
+            </fieldset>
+            <fieldset class="all">      
+               <legend>Attachments</legend>          
+               <div class="innerclass">
+               <label >Attachments: <b>  </b></label><input type="file" id="file1" class="inputType" name="files" multiple="multiple"/>
+               </div>
+            </fieldset>
+            <div class="btn">
+            <input class="button" name="reset"  id="reset"  tabindex="0" value="Reset" type="reset"/>
+            <input class="button" name="submit" id="submit" tabindex="0" value="Apply" type="submit"/>   
+            </div>
+   </form>
+ 
+</div>
+  
+        
+    </body>
+</html>
+
+

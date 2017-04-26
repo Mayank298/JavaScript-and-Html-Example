@@ -1,0 +1,169 @@
+form{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 450px;
+        padding: 0px;
+        padding-left: 13px;
+        border-radius: 1em;
+}
+
+legend{
+        background-color: lightslategray;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        width: 100%;
+
+}
+
+.innerclass{
+        padding-right: 15px;
+}
+
+fieldset.all{
+        border: black double 3px;
+        margin: 10px;
+        background-color: burlywood;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;   
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+}
+
+body{
+        margin:auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        background: #159957; 
+        
+}
+
+div.form{
+        margin-left: 300px;
+        align-self: center;
+        border: solid 2px snow;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;   
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;  
+        background: darkkhaki;
+        width: 500px;
+}
+
+h2{
+        padding-left: 18px;
+        background-color: cornsilk;
+        font-size: 50px;
+        margin-top: 0px;
+        color: black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+}
+
+h4{
+        padding-left: 40px; 
+        padding-bottom: 0px;  
+}
+
+h6{
+        padding-left: 40px;
+        font-size: 15px;
+        padding-bottom: 0px;  
+        color: red;
+        background-color: snow;
+}
+
+b{
+        color: red;    
+}
+
+small{
+        font-size: 25px;
+        color: black;
+}
+
+.button{
+        width:100px;
+        height: 40px;
+        text-align: center;
+        color: brown;
+        background-color: cornsilk;
+        border: solid 2px darkcyan;
+        margin-right:20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+         
+        font-size: 15px;
+}
+
+
+
+input.inputType,textarea,select{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;   
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; 
+        box-shadow: 3px 3px 3px 3px black;
+        padding: 3px;
+        margin: 8px;
+        max-width: 550px;
+}
+
+.innerclass{
+        margin: 0px;
+        text-align: right;
+        max-width: 650px;  
+}
+
+.selectlst, .selectlstedu{
+        width: 172px;
+}
+
+textarea{
+        vertical-align: top;
+        text-align: left;
+        height: 5em;
+        resize: vertical;
+
+}
+
+label{
+        text-align: center;
+}
+
+input.rdb{
+        border: none;
+        background-color: snow;
+        font-size: 15px;
+}
+
+fieldset.inn{
+        padding: 10px;
+        margin-left: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: snow;
+        width: 162px;
+        text-align: left;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;   
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; 
+}
+
+fieldset.inn legend{
+        font-size: 15px;
+        text-align: left;
+        background-color: cornflowerblue;
+        color: snow;
+}
+
+div.error{
+        color: red;
+        font-size: 15px;
+        font-weight: bold;
+}
